@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Risk Advisory - Priyuvaan Financial Advisers Pvt. Ltd.</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/Logo-Priyuvaan.com/4.png" />
+    <link rel="shortcut icon" type="image/png" href="assets/images/Logo-Priyuvaan.com/4.png" />
+    
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    
+    <!-- CDN Icon Fonts for better reliability -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+    
+    <!-- Local Icon Fonts (fallback) -->
+    <link href="css/fontawesome.css" rel="stylesheet" />
+    <link href="css/fontawesome-free.css" rel="stylesheet" />
+    <link href="css/flaticon.css" rel="stylesheet" />
+    <link href="css/flaticon-finance.css" rel="stylesheet" />
+    <link href="css/flaticon-set-business.css" rel="stylesheet" />
+    <link href="css/linear.css" rel="stylesheet" />
+    
+    <!-- Other CSS -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <link href="css/nice-select.css" rel="stylesheet" />
+    
+    <!-- Icon Fix CSS (Must be loaded last) -->
+    <link href="css/icon-override.css" rel="stylesheet" />
+    <link href="css/icon-fix.css" rel="stylesheet" />
+    
+
+
+    <!-- Priyuvaan Book Appointment Button Styling -->
+    <link href="css/priyuvaan-btn.css" rel="stylesheet" />
+    
+    <!-- Hero Background Slider Styling -->
+    <link href="css/hero-slider.css" rel="stylesheet" />
+    
+    <!-- Priyuvaan Official Colors Override -->
+    <link href="css/priyuvaan-colors.css" rel="stylesheet" />
+
+  <!-- Mobile Responsiveness Fixes -->
+  <link href="css/mobile-fixes.css" rel="stylesheet" />
+
+    <!-- Service Pages Fixes -->
+    <link href="css/service-pages-fix.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Enhanced Hero Styling (MUST BE LAST) -->
+    <link href="css/enhanced-hero-styling.css" rel="stylesheet" />
+
+    <!-- Service Pages Centered Styling -->
+    <style>
+      .service-details-content-centered {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      
+      .service-main-image {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      
+      .service-main-image img {
+        max-width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .service-header {
+        margin-bottom: 40px;
+      }
+      
+      .service-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 15px;
+      }
+      
+      .service-subtitle {
+        font-size: 1.2rem;
+        color: #64748b;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      
+      .service-description {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      
+      .service-description p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #475569;
+        margin-bottom: 20px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .service-features {
+        margin-bottom: 50px;
+      }
+      
+      .features-title {
+        font-size: 2rem;
+        color: #1e293b;
+        margin-bottom: 30px;
+      }
+      
+      .feature-card {
+        background: #fff;
+        padding: 30px 25px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        height: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      }
+      
+      .feature-icon {
+        background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+      }
+      
+      .feature-icon i {
+        font-size: 1.8rem;
+        color: white;
+      }
+      
+      .feature-content h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 15px;
+      }
+      
+      .feature-content p {
+        color: #64748b;
+        line-height: 1.6;
+      }
+      
+      .services-list-section {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      
+      .services-list-section h3 {
+        font-size: 2rem;
+        color: #1e293b;
+        margin-bottom: 30px;
+      }
+      
+      .services-grid {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .services-list {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+      }
+      
+      .services-list li {
+        padding: 12px 0;
+        border-bottom: 1px solid #e2e8f0;
+        color: #475569;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+      }
+      
+      .services-list li:last-child {
+        border-bottom: none;
+      }
+      
+      .services-list li i {
+        color: #3b82f6;
+        margin-right: 15px;
+        font-size: 1rem;
+      }
+      
+      .benefits-section h3 {
+        font-size: 2rem;
+        color: #1e293b;
+        margin-bottom: 30px;
+      }
+      
+      .benefit-card {
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        padding: 30px 25px;
+        border-radius: 15px;
+        text-align: center;
+        height: 100%;
+        border: 1px solid #e2e8f0;
+        transition: transform 0.3s ease;
+      }
+      
+      .benefit-card:hover {
+        transform: translateY(-3px);
+      }
+      
+      .benefit-icon {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+      }
+      
+      .benefit-icon i {
+        font-size: 1.5rem;
+        color: white;
+      }
+      
+      .benefit-content h5 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 10px;
+      }
+      
+      .benefit-content p {
+        color: #64748b;
+        line-height: 1.5;
+      }
+      
+      @media (max-width: 768px) {
+        .service-title {
+          font-size: 2rem;
+        }
+        
+        .service-subtitle {
+          font-size: 1.1rem;
+        }
+        
+        .service-main-image img {
+          height: 250px;
+        }
+        
+        .features-title, .services-list-section h3, .benefits-section h3 {
+          font-size: 1.5rem;
+        }
+        
+        .service-details-content-centered {
+          padding: 20px 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader">
+        <div class="animation-preloader">
+          <div class="spinner"></div>
+          <div class="txt-loading">
+            <span data-text-preloader="P" class="letters-loading">P</span>
+            <span data-text-preloader="r" class="letters-loading">r</span>
+            <span data-text-preloader="i" class="letters-loading">i</span>
+            <span data-text-preloader="y" class="letters-loading">y</span>
+            <span data-text-preloader="u" class="letters-loading">u</span>
+            <span data-text-preloader="v" class="letters-loading">v</span>
+            <span data-text-preloader="a" class="letters-loading">a</span>
+            <span data-text-preloader="a" class="letters-loading">a</span>
+            <span data-text-preloader="n" class="letters-loading">n</span>
+          </div>
+          <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+          <div class="row">
+            <div class="col-3 loader-section section-left">
+              <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+              <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+              <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+              <div class="bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="main-header header-style-one header-1">
+        <!-- Header Lower -->
+        <div class="header-lower">
+          <!-- Main box -->
+          <div class="main-box">
+            <!--Nav Box-->
+            <div class="nav-outer">
+              <div class="logo-box">
+                <div class="logo">
+                  <a href="index.html"><img src="assets/images/Logo-Priyuvaan.com/Header-2.png" alt="Priyuvaan Logo" /></a>
+                </div>
+              </div>
+
+              <div class="outer-box">
+                <nav class="nav main-menu">
+                  <ul class="navigation">
+                    <li>
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="current">
+                      <a href="page-about.html">About Us</a>
+                    </li>
+                    <li>
+                      <a href="page-team.html">Our Team</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Services</a>
+                      <ul>
+                        <li><a href="service-taxation.html">Taxation</a></li>
+                        <li><a href="service-market-entry.html">Market Entry</a></li>
+                        <li><a href="service-audit-assurance.html">Audit & Assurance</a></li>
+                        <li><a href="service-mergers-acquistions.html">Mergers & Acquistions</a></li>
+                        <li><a href="service-legal-advisory.html">Legal Advisory</a></li>
+                        <li><a href="service-risk-advisory.html">Risk Advisory</a></li>
+                        <li><a href="service-gst-services.html">GST Services</a></li>
+                        <li><a href="service-international-book-keeping.html">International Book Keeping</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="page-gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                      <a href="page-contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- Main Menu End-->
+                <div class="ui-btn-outer">
+                  <div class="header-contact">
+                    <div class="social-icon">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="tel:+919716013030" class="info-btn">
+                      <i class="icon fa fa-phone"></i>
+                      +91 9716013030
+                    </a>
+                  </div>
+                </div>
+
+                <a href="page-contact.html" class="theme-btn btn-style-priyuvaan" id="header-book-appointment">Book Appointment</a>
+
+                <!-- Mobile Nav toggler -->
+                <div class="mobile-nav-toggler"><span class="icon fas fa-bars"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Header Lower -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+          <div class="menu-backdrop"></div>
+          <nav class="menu-box">
+            <div class="upper-box">
+              <div class="nav-logo">
+                <a href="index.html"><img src="images/white-logo.png" alt="" /></a>
+              </div>
+              <div class="close-btn"><i class="icon fa fa-times"></i></div>
+            </div>
+
+            <ul class="navigation clearfix">
+              <!--Keep This Empty / Menu will come through Javascript-->
+            </ul>
+            <ul class="contact-list-one">
+              <li>
+                <div class="contact-info-box">
+                  <span class="icon lnr-icon-phone-handset"></span>
+                  <span class="title">Call Anytime</span>
+                  <a href="tel:+919716013030">+91 9716013030</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-info-box">
+                  <span class="icon lnr-icon-envelope1"></span>
+                  <span class="title">Send Email</span>
+                  <a href="mailto:info@priyuvaan.com">info@priyuvaan.com</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-info-box">
+                  <span class="icon lnr-icon-map-marker"></span>
+                  <span class="title">Visit Office</span>
+                  <span>Gurugram, Haryana</span>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="social-links">
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- End Mobile Menu -->
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+          <div class="auto-container">
+            <div class="inner-container">
+              <div class="logo">
+                <a href="index.html"><img src="assets/images/Logo-Priyuvaan.com/Header-2.png" alt="img" /></a>
+              </div>
+              <div class="nav-outer">
+                <nav class="main-menu">
+                  <div class="navbar-collapse show collapse clearfix">
+                    <ul class="navigation clearfix">
+                      <!--Keep This Empty / Menu will come through Javascript-->
+                    </ul>
+                  </div>
+                </nav>
+                <div class="mobile-nav-toggler"><span class="icon fas fa-bars"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Enhanced Hero Section -->
+      <section class="enhanced-hero-section" style="background-image: url('assets/images/backgound_img_hero/pexels-pixabay-327540.jpg');">
+        <div class="auto-container">
+          <div class="enhanced-hero-content">
+            <h1 class="enhanced-hero-title">Risk Advisory</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Details Section Start -->
+      <section class="service-details-section fix section-padding">
+        <div class="auto-container">
+          <div class="service-details-content-centered">
+            <!-- Main Service Image -->
+            <div class="service-main-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=400&q=80" alt="Risk Advisory Services" />
+            </div>
+
+            <!-- Service Header -->
+            <div class="service-header text-center">
+              <h1 class="service-title">Risk Advisory Services</h1>
+              <p class="service-subtitle">Protect your business with comprehensive risk management strategies. Our expert advisory services help identify, assess, and mitigate risks across all business operations.</p>
+            </div>
+
+            <!-- Service Description -->
+            <div class="service-description">
+              <p>In today's complex business environment, organizations face various risks including financial, operational, reputational, security, and fraud exposure. Effective risk management is crucial for sustainable business growth and continuity.</p>
+              <p>Our risk advisory services focus on building and implementing practical strategies that bridge the gap between reality and vision, caution and opportunity. We help you create robust frameworks that withstand daily business challenges, increased competition, cyber-attacks, and potential sabotage.</p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="service-features text-center">
+              <h2 class="features-title">Comprehensive Risk Management</h2>
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Risk Assessment</h4>
+                      <p>Comprehensive risk identification and assessment to understand your exposure levels across all business areas.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Risk Mitigation</h4>
+                      <p>Strategic risk mitigation plans designed to minimize impact and protect business continuity.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Process Optimization</h4>
+                      <p>Business process reengineering and optimization to enhance efficiency and reduce operational risks.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Services List -->
+            <div class="services-list-section">
+              <h3>Our Risk Advisory Services</h3>
+              <div class="services-grid">
+                <ul class="services-list">
+                  <li><i class="fas fa-check-circle"></i> SOX Compliance & J-SOX Audit</li>
+                  <li><i class="fas fa-check-circle"></i> Internal Controls Framework (ICFR)</li>
+                  <li><i class="fas fa-check-circle"></i> Business Process Reengineering (BPR)</li>
+                  <li><i class="fas fa-check-circle"></i> Risk Management Support</li>
+                  <li><i class="fas fa-check-circle"></i> Corporate Governance Advisory</li>
+                  <li><i class="fas fa-check-circle"></i> Information Technology Advisory</li>
+                  <li><i class="fas fa-check-circle"></i> Forensic & Dispute Resolution</li>
+                  <li><i class="fas fa-check-circle"></i> Transaction Testing Services</li>
+                  <li><i class="fas fa-check-circle"></i> Supply Chain Management Services</li>
+                  <li><i class="fas fa-check-circle"></i> Fixed Asset Management & Verification</li>
+                  <li><i class="fas fa-check-circle"></i> Standard Operating Procedures (SOP)</li>
+                  <li><i class="fas fa-check-circle"></i> Business Cost Optimization</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="benefits-section text-center">
+              <h3>Benefits of Our Risk Advisory</h3>
+              <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                  <div class="benefit-card">
+                    <div class="benefit-icon">
+                      <i class="fas fa-search"></i>
+                    </div>
+                    <div class="benefit-content">
+                      <h5>Risk Identification</h5>
+                      <p>Early identification of potential risks before they impact operations</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="benefit-card">
+                    <div class="benefit-icon">
+                      <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="benefit-content">
+                      <h5>Performance Improvement</h5>
+                      <p>Enhanced operational efficiency through optimized processes</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="benefit-card">
+                    <div class="benefit-icon">
+                      <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="benefit-content">
+                      <h5>Cost Reduction</h5>
+                      <p>Significant cost savings through risk prevention and process optimization</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="benefit-card">
+                    <div class="benefit-icon">
+                      <i class="fas fa-award"></i>
+                    </div>
+                    <div class="benefit-content">
+                      <h5>Compliance Assurance</h5>
+                      <p>Full compliance with regulatory requirements and industry standards</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section Start -->
+      <section class="cta-contact-section fix section-padding">
+        <div class="auto-container">
+          <div class="cta-contact-wrapper bg-cover" style="background-image: url('images/home-1/cta-bg.jpg'); background-color: #3b82f6; background-blend-mode: overlay;">
+            <div class="left-shape float-bob-x">
+              <img src="images/home-1/left-shape.png" alt="img" />
+            </div>
+            <div class="row g-4 align-items-center">
+              <div class="col-xl-8">
+                <div class="cta-contact-content">
+                  <div class="sec-title mb-0">
+                    <h6 class="sub-title text-white wow fadeInUp">
+                      <span class="triangle triangle1"></span>
+                      <span class="triangle triangle2"></span>
+                      Protect Your Business
+                    </h6>
+                    <h2 class="text-white wow fadeInUp" data-wow-delay=".2s">Ready to Manage Your Risks?</h2>
+                  </div>
+                  <p class="text-white wow fadeInUp" data-wow-delay=".4s">Connect with our risk management experts for comprehensive advisory and mitigation strategies.</p>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="cta-contact-button text-center wow fadeInUp" data-wow-delay=".6s">
+                  <a href="page-contact.html" class="theme-btn btn-style-one">
+                    <span class="btn-wrap">
+                      <span class="text-one">Contact Us</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- [Same footer as previous files] -->
+            <footer class="footer-section-1 fix footer-bg bg-cover" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); background-blend-mode: overlay;">
+        <span class="circle-shape"></span>
+        <span class="circle-shape-2"></span>
+        <div class="auto-container">
+          <div class="footer-widget-wrapper">
+            <div class="row justify-content-between">
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="footer-widget-items mt-30">
+                  <div class="widget-title mb-25">
+                    <a href="index.html" class="footer-logo">
+                      <img src="assets/images/Logo-Priyuvaan.com/footer-logo.png" alt="img" />
+                    </a>
+                  </div>
+                  <div class="footer-content">
+                    <p>Your trusted financial partner specializing in SME IPO advisory, project finance, and structured finance solutions.</p>
+                    <div class="social-icon">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="footer-widget-items mt-30">
+                  <div class="widget-title mb-25">
+                    <h3 class="font-size-24 text-white font-weight-500">Company</h3>
+                  </div>
+                  <ul class="user-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page-about.html">About us</a></li>
+                    <li><a href="page-services.html">Services</a></li>
+                    <li><a href="page-contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="footer-widget-items mt-30">
+                  <div class="widget-title mb-25">
+                    <h3 class="font-size-24 text-white font-weight-500">Support</h3>
+                  </div>
+                  <ul class="user-links">
+                    <li><a href="page-service-details.html">Customer Support</a></li>
+                    <li><a href="page-service-details.html">Privacy & policy</a></li>
+                    <li><a href="page-service-details.html">Terms & condition</a></li>
+                    <li><a href="page-service-details.html">Help Center</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                <div class="footer-widget-items mt-30">
+                  <div class="widget-title mb-25">
+                    <h3 class="font-size-24 text-white font-weight-500">Contact Us</h3>
+                  </div>
+                  <ul class="contact-list">
+                    <li>
+                      <i class="lnr-icon-phone-handset"></i>
+                      <p><a href="tel:+919716013030">+91 9716013030</a></p>
+                    </li>
+                    <li>
+                       <i class="lnr-icon-envelope"></i>
+                      <p><a href="mailto:info@priyuvaan.com">info@priyuvaan.com</a></p>
+                    </li>
+                    <li>
+                      <i class="lnr-icon-map-marker"></i>
+                      <p>122, 1st Floor, Vipul Trade Centre, Sector-48, Sohna Road, Gurgaon, Haryana 122018</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <p class="wow fadeInUp" data-wow-delay=".3s">Copyright © 2025 Priyuvaan Financial Advisers. All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- [Same scripts as previous files] -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/gsap-scroll-to-plugin.js"></script>
+    <script src="js/gsap-scroll-smoother.js"></script>
+    <script src="js/gsap-scroll-trigger.js"></script>
+    <script src="js/gsap-split-text.js"></script>
+    <script src="js/split-type.min.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/knob.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/mixitup.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
