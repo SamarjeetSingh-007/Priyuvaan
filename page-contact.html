@@ -623,6 +623,169 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/mixitup.js"></script>
     <script src="js/script.js"></script>
+    
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- EmailJS Contact Form Script -->
+    <script type="text/javascript">
+      // Initialize EmailJS
+      (function(){
+        emailjs.init("YGMkf-8Jaux3qOZms"); // Your public key
+      })();
+      
+      // Flag to prevent multiple initializations
+      let contactFormInitialized = false;
+      
+      // Contact form submission handler with improved debugging
+      function initContactForm() {
+        // Prevent multiple initializations
+        if (contactFormInitialized) {
+          console.log('Contact form already initialized, skipping...');
+          return;
+        }
+        
+        console.log('Initializing contact form...');
+        
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        
+        console.log('Contact form found:', contactForm);
+        console.log('Submit button found:', submitBtn);
+        
+        if (!contactForm) {
+          console.error('Contact form not found!');
+          return;
+        }
+        
+        if (!submitBtn) {
+          console.error('Submit button not found!');
+          return;
+        }
+        
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnLoading = submitBtn.querySelector('.btn-loading');
+        const formMessage = document.getElementById('form-message');
+        
+        console.log('Button elements:', { btnText, btnLoading, formMessage });
+        
+        // Remove any existing event listeners to prevent duplicates
+        const newForm = contactForm.cloneNode(true);
+        contactForm.parentNode.replaceChild(newForm, contactForm);
+        
+        // Get the new form reference
+        const cleanForm = document.getElementById('contact-form');
+        const cleanSubmitBtn = document.getElementById('submit-btn');
+        const cleanBtnText = cleanSubmitBtn.querySelector('.btn-text');
+        const cleanBtnLoading = cleanSubmitBtn.querySelector('.btn-loading');
+        
+        // Add single event listener to the clean form
+        cleanForm.addEventListener('submit', function(event) {
+          console.log('Form submit event triggered');
+          
+          // Prevent default form submission
+          event.preventDefault();
+          event.stopPropagation();
+          
+          console.log('Default prevented, processing form...');
+          
+          // Prevent multiple submissions
+          if (cleanSubmitBtn.disabled) {
+            console.log('Form already being submitted, ignoring...');
+            return;
+          }
+          
+          // Show loading state
+          if (cleanBtnText) cleanBtnText.style.display = 'none';
+          if (cleanBtnLoading) cleanBtnLoading.style.display = 'inline-block';
+          if (cleanSubmitBtn) cleanSubmitBtn.disabled = true;
+          if (formMessage) formMessage.style.display = 'none';
+          
+          // Get form data
+          const formData = new FormData(cleanForm);
+          const templateParams = {
+            user_name: formData.get('user_name') || '',
+            user_email: formData.get('user_email') || '',
+            user_phone: formData.get('user_phone') || '',
+            user_subject: formData.get('user_subject') || 'Contact Form Inquiry',
+            message: formData.get('message') || '',
+            time: new Date().toLocaleString('en-IN', {
+              timeZone: 'Asia/Kolkata',
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              hour: '2-digit',
+              minute: '2-digit'
+            })
+          };
+          
+          console.log('Template params:', templateParams);
+          console.log('Sending email via EmailJS...');
+          
+          // Send email using EmailJS
+          emailjs.send('service_jfxjin5', 'template_dhbxzay', templateParams)
+            .then(function(response) {
+              console.log('EmailJS SUCCESS!', response.status, response.text);
+              
+              // Show success message
+              if (formMessage) {
+                formMessage.innerHTML = `
+                  <div style="background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; padding: 15px; border-radius: 5px;">
+                    <i class="fa fa-check-circle"></i> Thank you for your message! We'll get back to you soon.
+                  </div>
+                `;
+                formMessage.style.display = 'block';
+              }
+              
+              // Reset form
+              cleanForm.reset();
+              
+              // Hide message after 5 seconds
+              setTimeout(() => {
+                if (formMessage) formMessage.style.display = 'none';
+              }, 5000);
+              
+            }, function(error) {
+              console.error('EmailJS FAILED...', error);
+              
+              // Show error message
+              if (formMessage) {
+                formMessage.innerHTML = `
+                  <div style="background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; padding: 15px; border-radius: 5px;">
+                    <i class="fa fa-exclamation-triangle"></i> Sorry, there was an error sending your message. Please try again or contact us directly.
+                  </div>
+                `;
+                formMessage.style.display = 'block';
+              }
+              
+              // Hide message after 8 seconds
+              setTimeout(() => {
+                if (formMessage) formMessage.style.display = 'none';
+              }, 8000);
+            })
+            .finally(function() {
+              console.log('EmailJS request completed, resetting button...');
+              
+              // Reset button state
+              if (cleanBtnText) cleanBtnText.style.display = 'inline-block';
+              if (cleanBtnLoading) cleanBtnLoading.style.display = 'none';
+              if (cleanSubmitBtn) cleanSubmitBtn.disabled = false;
+            });
+        });
+        
+        // Mark as initialized
+        contactFormInitialized = true;
+        console.log('Contact form initialized successfully - flag set to prevent duplicates');
+      }
+      
+      // Initialize when DOM is ready - single initialization
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initContactForm);
+      } else {
+        // DOM is already ready
+        initContactForm();
+      }
+    </script>
     <style>
       .contact-cards-section .row {
         display: flex;
