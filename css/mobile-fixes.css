@@ -1,0 +1,785 @@
+/* Mobile Responsiveness Fixes for Priyuvaan Website */
+/* Hero Tag Styling for Mobile */
+.hero-tag {
+  display: inline-block;
+  max-width: 90vw;
+  padding: 6px 16px;
+  font-size: 0.95rem;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
+  margin-bottom: 12px;
+}
+
+/* Hero Button Styling for Mobile */
+.hero-btn {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  margin: 18px auto 0 auto;
+  padding: 12px 0;
+  font-size: 1.05rem;
+  border-radius: 28px;
+  background: #2563eb;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Mobile-specific text replacement and styling */
+@media (max-width: 767px) {
+  /* Hero Tag (h6) styling for mobile */
+  .hero-content h6 {
+    font-size: 0.85rem !important;
+    padding: 8px 16px !important;
+    background: rgba(66, 165, 245, 0.15) !important;
+    border-radius: 20px !important;
+    display: inline-block !important;
+    margin-bottom: 15px !important;
+    max-width: 95% !important;
+    text-align: center !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Replace tag text on mobile only */
+  .hero-content h6::after {
+    content: 'Top Rated Firm';
+    display: block;
+    font-size: inherit;
+    color: inherit;
+  }
+  
+  .hero-content h6 .icon,
+  .hero-content h6 span:not(.icon) {
+    display: none !important;
+  }
+  
+  /* Hero Button styling for mobile */
+  .hero-button .theme-btn {
+    display: block !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 20px auto 0 auto !important;
+    padding: 14px 20px !important;
+    font-size: 1rem !important;
+    border-radius: 25px !important;
+    text-align: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  
+  /* Replace button text on mobile only */
+  .hero-button .theme-btn::before {
+    content: 'Get Consultation';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: inherit;
+    color: inherit;
+    z-index: 2;
+  }
+  
+  .hero-button .theme-btn * {
+    opacity: 0 !important;
+  }
+}
+
+/* Smaller glassmorphism cards for phone screens */
+@media (max-width: 480px) {
+  .why-choose-us-content-1 .circular-progress {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .why-choose-us-content-1 .circular-progress::before {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .why-choose-us-content-1 .progress-value {
+    font-size: 16px !important;
+  }
+  
+  .why-choose-us-content-1 .text {
+    font-size: 12px !important;
+    margin-top: 6px !important;
+  }
+  
+  .why-choose-us-content-1 .choose-us-progressbar {
+    gap: 15px !important;
+    margin-top: 10px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .why-choose-us-content-1 .progress-container {
+    margin-bottom: 15px !important;
+  }
+}
+
+/* Center footer content for all screen sizes with stronger selectors */
+footer.footer-section-1 {
+  text-align: center !important;
+}
+
+footer.footer-section-1 .footer-widget-wrapper {
+  text-align: center !important;
+}
+
+footer.footer-section-1 .footer-widget-items {
+  text-align: center !important;
+}
+
+footer.footer-section-1 .footer-content {
+  text-align: center !important;
+}
+
+footer.footer-section-1 .footer-bottom {
+  text-align: center !important;
+}
+
+footer.footer-section-1 .footer-logo {
+  display: inline-block !important;
+  margin: 0 auto !important;
+}
+
+footer.footer-section-1 .widget-title {
+  text-align: center !important;
+}
+
+footer.footer-section-1 ul.user-links,
+footer.footer-section-1 ul.contact-list {
+  text-align: center !important;
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+footer.footer-section-1 .social-icon {
+  text-align: center !important;
+  justify-content: center !important;
+  display: flex !important;
+}
+
+@media (max-width: 767px) {
+  footer.footer-section-1 .row {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  footer.footer-section-1 .col-xl-3,
+  footer.footer-section-1 .col-xl-2,
+  footer.footer-section-1 .col-lg-3,
+  footer.footer-section-1 .col-md-4,
+  footer.footer-section-1 .col-sm-6 {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+    display: block !important;
+  }
+  
+  footer.footer-section-1 .footer-widget-items {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #1741a6;
+}
+
+/* Responsive adjustments for hero text */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    padding: 0 8px;
+  }
+  .hero-description {
+    font-size: 0.95rem;
+    padding: 0 8px;
+  }
+}
+
+/* Mobile Header Fixes */
+@media only screen and (max-width: 767px) {
+  /* Reduce header height and spacing */
+  .main-header .header-lower {
+    padding: 6px 15px !important;
+    min-height: 50px !important;
+  }
+  
+  .main-header .main-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    min-height: 50px !important;
+  }
+  
+  .main-header .main-box .nav-outer {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    min-height: 50px !important;
+  }
+    /* Glassmorphism effect for mobile menu background */
+    .mobile-menu .menu-box {
+      background: rgba(255,255,255,0.18) !important;
+      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37) !important;
+      backdrop-filter: blur(16px) !important;
+      -webkit-backdrop-filter: blur(16px) !important;
+      border-radius: 18px !important;
+      border: 1px solid rgba(255,255,255,0.28) !important;
+      border-top: none !important;
+      border-bottom: none !important;
+    }
+  
+  /* Logo adjustments for mobile */
+  .main-header .header-lower .logo-box {
+    max-width: 100px !important;
+    min-width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .main-header .header-lower .logo-box .logo img {
+    max-width: 100px !important;
+    max-height: 32px !important;
+    width: auto !important;
+  }
+  
+  /* Right side elements container */
+  .main-header .header-lower .outer-box {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    margin-left: auto !important;
+  }
+  
+  /* Hide contact info on mobile */
+  .main-header .header-lower .ui-btn-outer {
+    display: none !important;
+  }
+  
+  /* Much smaller Mobile Book Appointment Button */
+  #header-book-appointment.theme-btn.btn-style-priyuvaan {
+    display: none !important;
+  }
+
+  /* Show Book Appointment link in mobile menu */
+  .mobile-menu .menu-box .book-appointment-mobile {
+    display: block !important;
+    margin: 18px auto 8px auto !important;
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    background: linear-gradient(90deg, #0d47a1 0%, #1976d2 60%, #42a5f5 100%) !important;
+    color: #fff !important;
+    border-radius: 25px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 15px rgba(25, 118, 210, 0.18) !important;
+    width: 80%;
+    max-width: 260px;
+  }
+
+  /* Fix pill container for hero section */
+  .hero-content h6 {
+    font-size: 0.85rem !important;
+    margin-bottom: 15px !important;
+    padding: 10px 18px !important;
+    line-height: 1.3 !important;
+    white-space: normal !important;
+    text-align: center !important;
+    max-width: 320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    word-break: break-word !important;
+    hyphens: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Ensure hero button text is fully visible and wraps */
+  .hero-button .theme-btn {
+    padding: 14px 24px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    display: inline-block !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    white-space: normal !important;
+    text-align: center !important;
+    border-radius: 25px !important;
+    box-shadow: 0 4px 15px rgba(25, 118, 210, 0.18) !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.3 !important;
+  }
+  /* Glassmorphism Mobile Navigation Toggler */
+  .mobile-nav-toggler {
+    display: block !important;
+    padding: 6px !important;
+    margin-left: 6px !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    transition: all 0.3s ease !important;
+    width: 36px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .mobile-nav-toggler:hover {
+    background: rgba(255, 255, 255, 0.35) !important;
+    transform: translateY(-2px) !important;
+  }
+  
+  .mobile-nav-toggler .icon {
+    font-size: 16px !important;
+    color: #333 !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media only screen and (max-width: 480px) {
+  .main-header .header-lower {
+    padding: 5px 10px !important;
+  }
+  
+  .main-header .header-lower .logo-box {
+    max-width: 85px !important;
+  }
+  
+  .main-header .header-lower .logo-box .logo img {
+    max-width: 85px !important;
+    max-height: 28px !important;
+  }
+  
+  #header-book-appointment.theme-btn.btn-style-priyuvaan {
+    padding: 5px 8px !important;
+    font-size: 0.7rem !important;
+    height: 30px !important;
+  }
+  
+  .mobile-nav-toggler {
+    width: 32px !important;
+    height: 28px !important;
+  }
+  
+  /* Extra small hero adjustments */
+  .hero-content h1 {
+    font-size: 1.4rem !important;
+  }
+  
+  .hero-content p {
+    font-size: 0.8rem !important;
+  }
+  
+  /* Fix pill text for small screens */
+  .hero-content h6 {
+    font-size: 0.65rem !important;
+    max-width: 260px !important;
+    padding: 6px 12px !important;
+  }
+}
+
+/* Hide sections for phone screens only */
+@media (max-width: 480px) {
+  /* Hide the "More than numbers" section on phone screens */
+  .why-choose-section {
+    display: none !important;
+  }
+  
+  /* Hide footer widget content but keep copyright on ALL pages */
+  footer.footer-section-1 .footer-widget-wrapper {
+    display: none !important;
+  }
+  
+  /* Ensure copyright footer bottom stays visible */
+  footer.footer-section-1 .footer-bottom {
+    display: block !important;
+    text-align: center !important;
+    padding: 20px 0 !important;
+  }
+  
+  /* Center all page hero sections (about, contact, team, gallery, services) - HIGH SPECIFICITY */
+  body .about-hero-section,
+  body .enhanced-hero-section,
+  body .contact-hero-section,
+  body .team-hero-section,
+  body .gallery-hero-section,
+  body .service-hero-section,
+  body [class*="-hero-section"]:not(.hero-section) {
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 30vh !important;
+    max-height: 35vh !important;
+    padding: 0 15px !important;
+    position: relative !important;
+  }
+  
+  body .about-hero-section .auto-container,
+  body .enhanced-hero-section .auto-container,
+  body .contact-hero-section .auto-container,
+  body .team-hero-section .auto-container,
+  body .gallery-hero-section .auto-container,
+  body .service-hero-section .auto-container,
+  body [class*="-hero-section"]:not(.hero-section) .auto-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  
+  body .about-hero-content,
+  body .enhanced-hero-content,
+  body .contact-hero-content,
+  body .team-hero-content,
+  body .gallery-hero-content,
+  body .service-hero-content,
+  body [class*="-hero-content"]:not(.hero-content) {
+    text-align: center !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    z-index: 3 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  body .about-hero-title,
+  body .enhanced-hero-title,
+  body .contact-hero-title,
+  body .team-hero-title,
+  body .gallery-hero-title,
+  body .service-hero-title,
+  body [class*="-hero-title"]:not(.hero-title) {
+    font-size: 2rem !important;
+    margin: 0 !important;
+    text-align: center !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    width: 100% !important;
+  }
+  
+  .hero-image-container {
+    max-width: 220px !important;
+  }
+  
+  .hero-main-image {
+    height: 220px !important;
+  }
+  
+  .hero-button .theme-btn {
+    padding: 12px 18px !important;
+    font-size: 0.85rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Team Cards Mobile Fixes */
+  .team-box-items .team-image img:nth-child(1) {
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+  
+  .team-box-items:hover .team-image img:nth-child(1) {
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+  
+  .team-box-items:hover .team-image img:nth-child(2) {
+    filter: none !important;
+    -webkit-filter: none !important;
+  }
+  
+  .team-box-items .team-image .team-content {
+    text-align: center !important;
+    left: 15px !important;
+    right: 15px !important;
+    bottom: 15px !important;
+    padding: 12px 15px !important;
+  }
+  
+  .team-box-items .team-image .team-content h4 {
+    text-align: center !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .team-box-items .team-image .team-content h4 a {
+    text-align: center !important;
+    display: block !important;
+  }
+  
+  .team-box-items .team-image .team-content .share-icon {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .team-box-items .team-image .team-content .social-links {
+    text-align: center !important;
+    justify-content: center !important;
+    display: flex !important;
+    gap: 8px !important;
+  }
+  
+  /* Team Section - Center content below cards */
+  .team-section .team-box-items {
+    text-align: center !important;
+  }
+  
+  .team-section .team-box-items p,
+  .team-section .team-box-items .team-description,
+  .team-section .team-box-items .team-info {
+    text-align: center !important;
+    margin: 15px auto !important;
+    padding: 0 15px !important;
+  }
+  
+  /* About Page - Center Get Consultation Button */
+  .about-section .theme-btn,
+  .about-section a[href*="contact"] {
+    display: block !important;
+    text-align: center !important;
+    margin: 20px auto !important;
+    width: fit-content !important;
+  }
+  
+  .about-section .btn-wrapper,
+  .about-section .button-wrapper,
+  .about-section .about-btn {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 20px 0 !important;
+  }
+  
+  .about-btn .theme-btn {
+    display: inline-block !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Landscape mobile phones */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .hero-section {
+    padding: 40px 0 !important;
+  }
+  
+  .hero-content {
+    margin-bottom: 20px !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* Hero Section Mobile Fixes */
+@media only screen and (max-width: 767px) {
+  /* Hero container fixes */
+  .hero-section {
+    padding: 60px 0 !important;
+    min-height: auto !important;
+  }
+  
+  .hero-section .auto-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+  }
+  
+  .hero-section .row {
+    margin: 0 !important;
+  }
+  
+  .hero-section [class*="col-"] {
+    padding: 0 15px !important;
+  }
+  
+  /* Hero content adjustments */
+  .hero-content {
+    text-align: center !important;
+    padding: 0 !important;
+    margin-bottom: 40px !important;
+  }
+  
+  /* Fix the pill container overflow */
+  .hero-content h6 {
+    font-size: 0.75rem !important;
+    margin-bottom: 15px !important;
+    padding: 8px 15px !important;
+    line-height: 1.3 !important;
+    white-space: normal !important;
+    text-align: center !important;
+    max-width: 300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    word-wrap: break-word !important;
+    hyphens: auto !important;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.6rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .hero-content p {
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 25px !important;
+  }
+  
+  /* Hero buttons - Style the Get Financial Consultation button */
+  .hero-button {
+    text-align: center !important;
+    margin-top: 20px !important;
+  }
+  
+  .hero-button .theme-btn {
+    padding: 14px 24px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    background: linear-gradient(90deg, #0d47a1 0%, #1976d2 60%, #42a5f5 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 25px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3) !important;
+    text-decoration: none !important;
+    letter-spacing: 0.5px !important;
+    text-transform: none !important;
+    line-height: 1.4 !important;
+  }
+  
+  .hero-button .theme-btn .icon {
+    margin-left: 8px !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .hero-button .theme-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(25, 118, 210, 0.4) !important;
+    background: linear-gradient(90deg, #42a5f5 0%, #1976d2 60%, #0d47a1 100%) !important;
+  }
+  
+  /* Hero image adjustments - Make it a perfect circle and bigger */
+  .hero-visual-content {
+    margin-top: 30px !important;
+    text-align: center !important;
+  }
+  
+  .hero-image-container {
+    position: relative !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+  
+  .hero-main-image {
+    width: 100% !important;
+    height: 280px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .hero-main-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+  }
+  
+  /* Hide or simplify bubble images on mobile */
+  .bubble-images {
+    display: none !important;
+  }
+  
+  /* Background slider adjustments */
+  .hero-bg-slider {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -2 !important;
+  }
+  
+  .hero-bg-slider .slide-item {
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: scroll !important;
+  }
+  
+  .hero-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: -1 !important;
+  }
+}
+
+/* Prevent horizontal scroll */
+@media only screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  
+  .container,
+  .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    max-width: 100% !important;
+  }
+  
+  .row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
+  
+  [class*="col-"] {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}

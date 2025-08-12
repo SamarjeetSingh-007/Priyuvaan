@@ -1,0 +1,86 @@
+/* Icon Override CSS for Priyuvaan Website */
+/* This file replaces broken/missing icons with FontAwesome equivalents */
+
+/* Hide broken flaticon and linearicon fonts and replace with FontAwesome */
+.lnr-icon-bars:before { content: '\f0c9' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.lnr-icon-phone-handset:before { content: '\f095' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.lnr-icon-envelope1:before { content: '\f0e0' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.lnr-icon-clock:before { content: '\f017' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.lnr-icon-briefcase:before { content: '\f0b1' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.lnr-icon-arrow-right:before { content: '\f061' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.lnr-icon-checkmark-circle:before { content: '\f058' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.lnr-icon-layers:before { content: '\f5fd' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.lnr-icon-folder-open:before { content: '\f07c' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.lnr-icon-map-marker:before { content: '\f3c5' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+
+/* Flaticon replacements */
+.flaticon-business-028-briefcase:before { content: '\f0b1' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.flaticon-finance-business-expense-svgrepo-com-1:before { content: '\f201' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.flaticon-business-006-target:before { content: '\f140' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.flaticon-business-023-lifesaver:before { content: '\f1cd' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+.flaticon-finance-Priicng-Plan:before { content: '\f155' !important; font-family: 'Font Awesome 6 Free' !important; font-weight: 900 !important; }
+
+/* Override all flaticon and linearicon references to use FontAwesome */
+[class^="flaticon-"],
+[class*=" flaticon-"],
+[class^="lnr-"],
+[class*=" lnr-"] {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    text-decoration: inherit !important;
+    text-rendering: auto !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Custom icon styles to ensure proper display */
+.icon i, .title-icon i {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Disable original font-face declarations that reference missing files */
+@font-face {
+  font-family: 'linearicons-free';
+  src: none;
+}
+
+@font-face {
+  font-family: "FlaticonBusiness";
+  src: none;
+}
+
+@font-face {
+  font-family: "FlaticonFinance";
+  src: none;
+}
+
+@font-face {
+  font-family: "FlaticonSetBusiness";
+  src: none;
+}
+
+/* Fix for any remaining broken icons - fallback to generic business icon */
+[class*="flaticon-"]:not([class*="before"]):before,
+[class*="lnr-icon-"]:not([class*="before"]):before {
+    content: '\f1ad' !important; 
+    font-family: 'Font Awesome 6 Free' !important; 
+    font-weight: 900 !important;
+}
+
+/* Ensure proper sizing and spacing */
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i {
+    font-size: inherit;
+    line-height: inherit;
+}

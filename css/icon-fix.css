@@ -1,0 +1,84 @@
+/* Comprehensive Icon Fix CSS - Load this last */
+/* Forces all broken icons to use FontAwesome equivalents */
+
+/* Override all icon font families to use FontAwesome */
+[class*="flaticon-"],
+[class*="lnr-icon-"],
+[class*="lnr-"],
+[class^="icon-"],
+.icon i,
+.title-icon i {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Specific Icon Mappings */
+.lnr-icon-bars:before { content: '\f0c9' !important; }
+.lnr-icon-phone-handset:before { content: '\f095' !important; }
+.lnr-icon-envelope1:before { content: '\f0e0' !important; }
+.lnr-icon-clock:before { content: '\f017' !important; }
+.lnr-icon-map-marker:before { content: '\f3c5' !important; }
+.lnr-icon-briefcase:before { content: '\f0b1' !important; }
+.lnr-icon-arrow-right:before { content: '\f061' !important; }
+.lnr-icon-checkmark-circle:before { content: '\f058' !important; }
+.lnr-icon-layers:before { content: '\f5fd' !important; }
+.lnr-icon-folder-open:before { content: '\f07c' !important; }
+
+/* Flaticon Mappings */
+.flaticon-business-028-briefcase:before { content: '\f0b1' !important; }
+.flaticon-business-006-target:before { content: '\f140' !important; }
+.flaticon-business-023-lifesaver:before { content: '\f1cd' !important; }
+.flaticon-finance-business-expense-svgrepo-com-1:before { content: '\f201' !important; }
+.flaticon-finance-Priicng-Plan:before { content: '\f155' !important; }
+
+/* Mobile Navigation */
+.mobile-nav-toggler .icon:before { content: '\f0c9' !important; }
+.close-btn i:before { content: '\f00d' !important; }
+
+/* Social Icons - Use brands font */
+.fa-facebook-f:before { content: '\f39e' !important; font-family: "Font Awesome 6 Brands" !important; }
+.fa-x-twitter:before { content: '\e61b' !important; font-family: "Font Awesome 6 Brands" !important; }
+.fa-instagram:before { content: '\f16d' !important; font-family: "Font Awesome 6 Brands" !important; }
+.fa-linkedin-in:before { content: '\f0e1' !important; font-family: "Font Awesome 6 Brands" !important; }
+
+/* Common icons */
+.fa-angle-up:before { content: '\f106' !important; }
+.fa-star:before { content: '\f005' !important; }
+.fa-check:before { content: '\f00c' !important; }
+.fa-arrow-right:before { content: '\f061' !important; }
+.fa-arrow-left:before { content: '\f060' !important; }
+.fa-phone:before { content: '\f095' !important; }
+.fa-envelope:before { content: '\f0e0' !important; }
+.fa-map-marker-alt:before { content: '\f3c5' !important; }
+
+/* Fallback for any unmatched icons */
+[class*="flaticon-"]:not([class*="fa-"]):before,
+[class*="lnr-icon-"]:not([class*="fa-"]):before {
+    content: '\f1ad' !important; /* Default business icon */
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+}
+
+/* Disable broken font files */
+@font-face {
+    font-family: 'linearicons-free';
+    src: none !important;
+}
+
+@font-face {
+    font-family: 'FlaticonBusiness';
+    src: none !important;
+}
+
+@font-face {
+    font-family: 'FlaticonFinance';
+    src: none !important;
+}
+
+@font-face {
+    font-family: 'FlaticonSetBusiness';
+    src: none !important;
+}

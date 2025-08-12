@@ -1,0 +1,162 @@
+/* Service Pages Fixes - CSS Override */
+
+/* Fix dropdown menu visibility and styling */
+.main-menu .navigation > li.dropdown:hover > ul {
+  display: block !important;
+  margin-top: 0 !important;
+  opacity: 1 !important;
+  top: 100% !important;
+  visibility: visible !important;
+  -webkit-transition: all 300ms ease !important;
+  transition: all 300ms ease !important;
+  z-index: 9999 !important;
+}
+
+.main-menu .navigation > li > ul {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+  display: none !important;
+  left: 0px !important;
+  margin-top: 0 !important;
+  opacity: 0 !important;
+  padding: 15px 0 !important;
+  position: absolute !important;
+  top: 100% !important;
+  width: 280px !important;
+  z-index: 9999 !important;
+  border-radius: 8px !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+.main-menu .navigation > li > ul > li {
+  position: relative !important;
+  width: 100% !important;
+  border-bottom: 1px solid #f3f4f6 !important;
+  margin: 0 !important;
+}
+
+.main-menu .navigation > li > ul > li:last-child {
+  border-bottom: none !important;
+}
+
+.main-menu .navigation > li > ul > li > a {
+  position: relative !important;
+  display: block !important;
+  padding: 12px 25px !important;
+  line-height: 1.4 !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  color: #374151 !important;
+  text-align: left !important;
+  text-transform: none !important;
+  transition: all 200ms ease !important;
+  margin: 0 !important;
+}
+
+.main-menu .navigation > li > ul > li:hover > a {
+  color: #1e3a8a !important;
+  background-color: #f8fafc !important;
+  padding-left: 30px !important;
+}
+
+/* Fix page title section spacing */
+.page-title {
+  padding: 120px 0 80px !important;
+  margin-top: 0 !important;
+}
+
+/* Improve service details section */
+.service-details-section {
+  padding: 80px 0 !important;
+}
+
+/* Service page content styling improvements */
+.service-details-content {
+  line-height: 1.7 !important;
+}
+
+.service-details-content h1,
+.service-details-content h2,
+.service-details-content h3 {
+  color: #1e3a8a !important;
+  margin-bottom: 20px !important;
+}
+
+.service-details-content p {
+  margin-bottom: 20px !important;
+  color: #4b5563 !important;
+}
+
+.service-details-content ul {
+  margin-bottom: 25px !important;
+}
+
+.service-details-content ul li {
+  margin-bottom: 8px !important;
+  color: #4b5563 !important;
+}
+
+/* Fix any header spacing issues */
+.main-header {
+  position: relative !important;
+  z-index: 999 !important;
+}
+
+/* Improve breadcrumb styling */
+.bread-crumb .breadcrumb {
+  background: rgba(255, 255, 255, 0.9) !important;
+  padding: 10px 20px !important;
+  border-radius: 25px !important;
+  margin-bottom: 20px !important;
+}
+
+.bread-crumb .breadcrumb-item a {
+  color: #1e3a8a !important;
+  text-decoration: none !important;
+}
+
+.bread-crumb .breadcrumb-item.active {
+  color: #6b7280 !important;
+}
+
+/* Page title heading improvements */
+.page-title-heading {
+  color: #ffffff !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Mobile responsiveness fixes */
+@media (max-width: 768px) {
+  .main-menu .navigation > li > ul {
+    width: 250px !important;
+    left: -20px !important;
+  }
+  
+  .page-title {
+    padding: 100px 0 60px !important;
+  }
+  
+  .page-title-heading {
+    font-size: 2rem !important;
+  }
+}
+
+/* Sticky header dropdown fix */
+.sticky-header .main-menu .navigation > li.dropdown:hover > ul {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: 100% !important;
+  z-index: 9999 !important;
+}
+
+/* Ensure dropdowns work on both regular and sticky headers */
+.header-style-one .main-menu .navigation > li.dropdown:hover > ul,
+.sticky-header .main-menu .navigation > li.dropdown:hover > ul {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}

@@ -1,0 +1,166 @@
+/* Priyuvaan Color Override - Ensures all compo/* Button and link hover states */
+a:hover,
+.link:hover {
+  color: #1976d2 !important;
+}
+
+/* Override any remaining green elements */
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 1px solid #42a5f5 !important;
+  background: #e3f2fd !important;
+  color: #0d47a1 !important;
+}
+
+.ui-state-checked {
+  border: 1px solid #42a5f5 !important;
+  background: #e3f2fd !important;
+}
+
+/* Ensure circular progress uses official colors */
+.circular-progress {
+  background: conic-gradient(#42a5f5 0deg, #D4D4D4 0deg) !important;
+}
+
+/* Override any green progress bars or meters */
+.progress-bar,
+.meter,
+.gauge {
+  background-color: #42a5f5 !important;
+}
+
+/* Override any green icons or accent elements */
+.icon.green,
+.accent.green,
+.highlight.green {
+  color: #42a5f5 !important;
+  background-color: #42a5f5 !important;
+}
+
+/* Ensure all theme-based animations use blue */
+.animate-color,
+.color-transition {
+  color: #42a5f5 !important;
+}
+
+/* Force any remaining green elements to blue */
+*[style*="color: #"] {
+  color: inherit !important;
+}
+
+/* Override any inline green styles */
+*[style*="#00FF00"],
+*[style*="#32CD32"],
+*[style*="#9ACD32"],
+*[style*="#ADFF2F"],
+*[style*="#C8F169"],
+*[style*="lime"],
+*[style*="green"] {
+  color: #42a5f5 !important;
+  background-color: transparent !important;
+} use official brand colors */
+
+/* Primary accent colors */
+.color1 {
+  color: #42a5f5 !important; /* Light Blue */
+}
+
+.color2 {
+  color: #0d47a1 !important; /* Dark Blue */
+}
+
+.color3 {
+  color: #1e40af !important; /* Medium Blue */
+}
+
+.bg-color3 {
+  background-color: #e3f2fd !important; /* Very Light Blue */
+}
+
+/* Ensure all theme-based elements use Priyuvaan colors */
+.section-bg {
+  background-color: #e3f2fd !important;
+}
+
+/* Update any remaining green elements */
+.theme-color1,
+.accent-color,
+.primary-color {
+  color: #42a5f5 !important;
+}
+
+.theme-color2,
+.secondary-color {
+  color: #0d47a1 !important;
+}
+
+.theme-bg1,
+.accent-bg,
+.primary-bg {
+  background-color: #42a5f5 !important;
+}
+
+.theme-bg2,
+.secondary-bg {
+  background-color: #0d47a1 !important;
+}
+
+/* Button and link hover states */
+a:hover,
+.link:hover {
+  color: #42a5f5 !important;
+}
+
+/* Update any border colors */
+.theme-border1 {
+  border-color: #42a5f5 !important;
+}
+
+.theme-border2 {
+  border-color: #0d47a1 !important;
+}
+
+/* Ensure gradients use Priyuvaan colors */
+.gradient-bg {
+  background: linear-gradient(90deg, #42a5f5 0%, #0d47a1 100%) !important;
+}
+
+/* Icon colors */
+.icon-primary {
+  color: #42a5f5 !important;
+}
+
+.icon-secondary {
+  color: #0d47a1 !important;
+}
+
+/* Update progress bars, highlights, and other accent elements */
+.progress-bar,
+.highlight,
+.accent-element {
+  background-color: #42a5f5 !important;
+}
+
+/* Ensure text readability with new colors */
+.bg-primary .text,
+.bg-primary p,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4,
+.bg-primary h5,
+.bg-primary h6 {
+  color: white !important;
+}
+
+/* Update any chart or visualization colors */
+.chart-primary {
+  fill: #42a5f5 !important;
+  stroke: #42a5f5 !important;
+}
+
+.chart-secondary {
+  fill: #0d47a1 !important;
+  stroke: #0d47a1 !important;
+}

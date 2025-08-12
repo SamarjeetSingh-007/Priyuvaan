@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.enhanced-hero-title {
+	font-family: 'Montserrat', 'Oswald', Arial, sans-serif;
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: underline;
+	letter-spacing: 0.15em;
+	color: #0a2342;
+	margin: 0 auto;
+	font-weight: 700;
+	text-shadow: 0 2px 8px rgba(10,35,66,0.12), 0 1px 0 #fff;
+	background: linear-gradient(90deg, #0a2342 60%, #1e90ff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	transition: text-shadow 0.3s, color 0.3s;
+}
+
+.enhanced-hero-title:hover {
+	text-shadow: 0 4px 16px rgba(30,144,255,0.25), 0 2px 0 #fff;
+	color: #1e90ff;
+}
